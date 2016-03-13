@@ -1,5 +1,5 @@
-//2016.3.15
-//Ê¯¼Ò×¯ÌúµÀ´óÑ§
+ï»¿//2016.3.15
+//çŸ³å®¶åº„é“é“å¤§å­¦
 
 #include<iostream>
 #include<fstream>
@@ -30,7 +30,7 @@ string fuhao(int v)
 		return c;
 		}
 	}
-string suanshi(int v, int c, int y)   //Éú³ÉËãÊ½
+string suanshi(int v, int c, int y)   //ç”Ÿæˆç®—å¼
  {
    	int n1, n2;
 	int shu = (rand() % (8) + 2);
@@ -141,22 +141,22 @@ void main()
 	int c;
 	int wenjian;
 	ofstream fl;
-	cout << "ÇëÊäÈëÒ»¹²ÓĞ¶àÉÙ¸öËãÊ½£º" << endl;
+	cout << "è¯·è¾“å…¥ä¸€å…±æœ‰å¤šå°‘ä¸ªç®—å¼ï¼š" << endl;
 	cin >> c;
-	cout << "ÊÇ·ñÊä³öµ½ÎÄ¼ş£º(1:ÊÇ£¬ 0£º·ñ)" << endl;
+	cout << "æ˜¯å¦è¾“å‡ºåˆ°æ–‡ä»¶ï¼š(1:æ˜¯ï¼Œ 0ï¼šå¦)" << endl;
 	cin >> wenjian;
-	cout << "ÓĞÎŞ³ı·¨£º£¨1£ºÓĞ£¬0£ºÎŞ£©" << endl;
+	cout << "æœ‰æ— é™¤æ³•ï¼šï¼ˆ1ï¼šæœ‰ï¼Œ0ï¼šæ— ï¼‰" << endl;
 	cin >> v;
-	cout << "ÊÇ·ñÓĞÀ¨ºÅ£º£¨1£ºÓĞ£¬0£ºÎŞ£©" << endl;
+	cout << "æ˜¯å¦æœ‰æ‹¬å·ï¼šï¼ˆ1ï¼šæœ‰ï¼Œ0ï¼šæ— ï¼‰" << endl;
 	cin >> kuohao;
-	cout << "ÇëÊäÈëÊıÖµµÄ·¶Î§£º" << endl;
+	cout << "è¯·è¾“å…¥æ•°å€¼çš„èŒƒå›´ï¼š" << endl;
 	cout << "1-";
 	cin >> fanwei;	
 	cout << endl;
 	if (wenjian)
 		 {
 		fl.open("file.txt");
-		fl << "µÀËÄÔòÔËËãÌâÈçÏÂ£º" << endl;
+		fl << "é“å››åˆ™è¿ç®—é¢˜å¦‚ä¸‹ï¼š" << endl;
 		for (int i = 0; i < c; i++)
 		 {
 			fl << suanshi(v, kuohao, fanwei) << endl;
